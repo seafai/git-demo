@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>南灼 · 文字蜘蛛｜下载与使用说明</title>
+  <meta name="description" content="南灼的文字蜘蛛浏览器扩展。下载安装包，按步骤安装，在自己选定的网页文字上体验抓取、翻转与回弹。支持 Chrome 和 Edge。">
+  <meta name="author" content="南灼">
+  <meta name="theme-color" content="#0d1512">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d1512'/%3E%3Cpath d='M8 24V8L24 24V8' fill='none' stroke='%2394ead4' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="watermark" aria-hidden="true"><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="南灼，返回顶部"><span class="monogram" aria-hidden="true">N</span><span>南灼<span class="brand-divider"> / </span><span class="brand-product">文字蜘蛛</span></span></a>
+    <nav aria-label="页面导航"><a href="#installation">安装步骤</a><a href="#usage">使用说明</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <div class="eyebrow">WEB CRAWLERS <span>浏览器扩展 · v1.0.0</span></div>
+        <h1 id="title">文字蜘蛛<span class="title-dot">.</span></h1>
+        <p class="lead">让蜘蛛走进你选定的网页。</p>
+        <p class="description">脚尖抓住文字，腿部扫过也能触发翻转、反色与回弹。装好扩展，打开自己的网页，就可以开始。</p>
+        <div class="download-actions">
+          <a class="button button-primary" href="https://github.com/seafai/git-demo/tree/master/nanzhuo-web-crawler" data-github-repo><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>前往 GitHub 下载</a>
+          <a class="button button-secondary" href="downloads/nanzhuo-manual.html" download="南灼-文字蜘蛛使用说明书.html">下载使用说明书</a>
+        </div>
+        <p class="download-meta">Chrome / Edge · ZIP 安装包 · 约 39 KB<br>在 GitHub 仓库下载，说明书可保存到本地阅读。</p>
+        <div class="creator"><span class="creator-line" aria-hidden="true"></span>作者 <strong>南灼</strong></div>
+      </div>
+      <figure class="effect-preview">
+        <div class="preview-label"><span>文字接触效果</span><span>ACTUAL PREVIEW</span></div>
+        <img src="assets/effect.png" width="1280" height="900" alt="文字蜘蛛的细腿接触代码后，文字发生抓取、翻转、反色和回弹的实际效果截图">
+        <figcaption><span>抓取 / 翻转 / 反色 / 扭转 / 拉伸</span><span class="caption-detail">实际运行截图</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="installation" class="installation section" aria-labelledby="install-title">
+      <div class="section-heading"><div><p class="section-kicker">01 / INSTALL</p><h2 id="install-title">第一次安装，只需三步。</h2></div><p>电脑端 Chrome 或 Edge 浏览器<br>本版通过“加载已解压的扩展”安装。</p></div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><h3>在 GitHub 下载并解压</h3><p>点击上方“前往 GitHub 下载”，在仓库说明中点击“下载安装包”，再解压 ZIP。保留 <code>web-crawler-extension</code> 文件夹，里面应能看到 <code>manifest.json</code>。</p></article>
+        <article class="step"><span class="step-number">02</span><h3>打开扩展管理页</h3><p>复制对应地址，粘贴到浏览器地址栏打开，再开启“开发者模式”。</p><div class="browser-address"><span>Chrome</span><code>chrome://extensions</code><button type="button" data-copy="chrome://extensions" aria-label="复制 Chrome 扩展管理页地址">复制</button></div><div class="browser-address"><span>Edge</span><code>edge://extensions</code><button type="button" data-copy="edge://extensions" aria-label="复制 Edge 扩展管理页地址">复制</button></div></article>
+        <article class="step"><span class="step-number">03</span><h3>加载扩展文件夹</h3><p>点击“加载已解压的扩展程序”，选择含有 <code>manifest.json</code> 的文件夹。安装后，把“文字蜘蛛”固定到浏览器工具栏。</p><p class="step-note">请选择解压后的文件夹，解压目录需要保留。</p></article>
+      </div>
+      <p class="official-links">浏览器官方说明：<a href="https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked" target="_blank" rel="noopener noreferrer">Chrome 安装指南</a><span> · </span><a href="https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading" target="_blank" rel="noopener noreferrer">Edge 安装指南</a></p>
+    </section>
+
+    <section id="usage" class="usage section" aria-labelledby="usage-title">
+      <div class="section-heading"><div><p class="section-kicker">02 / USE</p><h2 id="usage-title">打开网页，选择你的活动范围。</h2></div><a class="text-link" href="downloads/nanzhuo-manual.html">阅读完整说明书</a></div>
+      <div class="usage-grid">
+        <div class="usage-content">
+          <p class="usage-intro">打开目标网页，点击工具栏里的蜘蛛图标，再选一种开启方式。</p>
+          <div class="mode"><span class="mode-index">A</span><div><h3>当前网页</h3><p>点击“在当前网页开启”，让蜘蛛在当前正文里的普通文字、标题、链接和代码上活动。</p></div></div>
+          <div class="mode"><span class="mode-index">B</span><div><h3>点击选块</h3><p>移动鼠标查看高亮范围，点击想要互动的段落、代码块或内容区。</p></div></div>
+          <div class="mode"><span class="mode-index">C</span><div><h3>拖拽框选</h3><p>按住鼠标画一个至少 100 × 100 像素的矩形，松开开始。选择过程中按 Esc 取消。</p></div></div>
+          <div class="control-note"><strong>效果由你来调。</strong><p>在弹窗中切换接触效果，调整速度、力度和大小。网页右下角的控制条可以暂停、跟随指针，以及关闭并恢复页面。</p><p class="shortcuts"><kbd>Alt + Shift + S</kbd> 暂停 / 继续<br><kbd>Alt + Shift + X</kbd> 关闭并恢复</p></div>
+        </div>
+        <figure class="popup-preview"><img src="assets/popup.png" width="360" height="647" alt="文字蜘蛛扩展弹窗，含当前网页、点击选块、拖拽框选以及效果和大小调节控件" loading="lazy"><figcaption>扩展工具栏弹窗</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="notes section" aria-labelledby="notes-title"><div><p class="section-kicker">03 / NOTES</p><h2 id="notes-title">使用前了解这些。</h2></div><div class="notes-list">
+      <details open><summary>本地 HTML 也能使用吗？</summary><p>可以。在扩展管理页进入“文字蜘蛛”的“详细信息”，开启“允许访问文件网址”，再用同一个浏览器打开本地 HTML 文件并启动扩展。</p></details>
+      <details><summary>哪些内容能产生互动？</summary><p>普通网页主页面中的文字和代码。浏览器设置页、扩展商店、内置 PDF 阅读器、图片或 Canvas 内的文字、跨域 iframe 和 Shadow DOM 内的内容不在本版范围内。输入框和可编辑区域会跳过；网页编辑器可选择阅读视图或预览区域。</p></details>
+      <details><summary>关闭、刷新和切换标签页会怎样？</summary><p>点击“关闭并恢复”会撤销文字包装和动画样式。每个标签页分别运行；新标签页、刷新或跳转后，需要手动再次开启。部分结构复杂的动态网页可能需要刷新恢复，建议选择正文或阅读区域。</p></details>
+      <details><summary>网页内容会上传吗？</summary><p>动画和文字互动在本机运行，不向服务器发送网页文字或截图。只有点击扩展后才访问你选定的网页；设置保存在本机浏览器中。</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer wrap"><div><strong>南灼</strong><span>文字蜘蛛 · v1.0.0</span></div><p>浏览器扩展安装包与使用说明</p><a href="downloads/nanzhuo-manual.html" download="南灼-文字蜘蛛使用说明书.html">保存说明书</a></footer>
+  <div id="copy-status" class="copy-status" role="status" aria-live="polite"></div>
+</body>
+</html>

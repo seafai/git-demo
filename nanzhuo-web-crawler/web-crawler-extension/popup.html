@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文字蜘蛛</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><img src="icons/icon-48.png" width="38" height="38" alt=""><div><h1>文字蜘蛛</h1><p>WEB CRAWLERS / 网页互动实验</p></div><span class="badge">1.0</span></header>
+  <section class="page"><div class="label">当前网页</div><div id="page-title">正在获取…</div><div id="status"><i></i><span id="status-text">尚未启动</span></div></section>
+  <section class="launch"><button id="start" class="primary" type="button">在当前网页开启</button><div class="pair"><button id="pick" type="button">点击选块</button><button id="area" type="button">拖拽框选</button></div><p class="hint">选定内容后开始爬行，普通文字和代码都能互动。</p></section>
+  <section class="settings"><div class="setting"><label for="effect">接触效果</label><select id="effect"><option value="mix">混合效果</option><option value="grab">抓取抬起</option><option value="flip">翻转反向</option><option value="invert">颜色反转</option><option value="twist">扭转摆动</option><option value="stretch">拉伸挤压</option></select></div>
+    <div class="setting"><span>移动方式</span><div class="modes"><button id="auto" type="button" aria-pressed="true">自动游走</button><button id="follow" type="button" aria-pressed="false">跟随指针</button></div></div>
+    <label class="slider" for="speed"><span>爬行速度</span><input id="speed" type="range" min="0.4" max="2.4" step="0.1" value="1"><output id="speed-value">1.0×</output></label>
+    <label class="slider" for="intensity"><span>互动力度</span><input id="intensity" type="range" min="0.4" max="2.6" step="0.1" value="1.4"><output id="intensity-value">1.4×</output></label>
+    <label class="slider" for="size"><span>蜘蛛大小</span><input id="size" type="range" min="0.6" max="1.5" step="0.1" value="1"><output id="size-value">1.0×</output></label>
+  </section>
+  <section class="controls"><button id="pause" type="button" disabled>暂停</button><button id="panel" type="button" disabled>显示控制条</button><button id="stop" class="stop" type="button" disabled>关闭并恢复</button></section>
+  <p id="message" role="status" aria-live="polite"></p>
+  <footer>仅在你启动的网页生效 · 刷新后重新开启<br>本地 HTML 请在扩展详情中允许访问文件网址</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

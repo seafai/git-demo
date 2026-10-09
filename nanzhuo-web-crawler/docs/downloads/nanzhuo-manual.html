@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="南灼"><title>南灼 · 文字蜘蛛使用说明书</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0d1512;color:#edf4ef;font:16px/1.9 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}main{width:min(850px,calc(100% - 40px));margin:auto;padding:55px 0 65px}header{border-bottom:1px solid #304438;padding-bottom:27px}.author{color:#94ead4;font-size:17px;margin-bottom:10px}h1{font-weight:550;font-size:32px;line-height:1.5;margin:0 0 10px}h2{font-weight:550;font-size:22px;margin:34px 0 13px;color:#d6f0e2}h3{font-size:17px;font-weight:550;margin:20px 0 7px}p{margin:9px 0;color:#b7c9bc}li{margin:10px 0;color:#b7c9bc}li strong{color:#edf4ef}a{color:#94ead4;text-underline-offset:4px}code,kbd{font:14px/1.8 Consolas,monospace;color:#cbeedc;overflow-wrap:anywhere}code{background:#1c3024;border-radius:3px;padding:3px 5px}ol,ul{padding-left:24px}.note{border-left:2px solid #94ead4;background:#15271c;padding:10px 17px}.meta{font-size:14px;color:#94af9f}.watermark{position:fixed;inset:0;pointer-events:none;user-select:none;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);place-items:center;overflow:hidden;z-index:5}.watermark span{font-size:40px;letter-spacing:10px;transform:rotate(-27deg);color:rgb(229 255 239 / 2.7%)}table{width:100%;border-collapse:collapse;font-size:15px;margin-top:15px}td,th{border:1px solid #304438;padding:12px;text-align:left}th{font-weight:500;color:#d6f0e2}td{color:#b7c9bc}footer{border-top:1px solid #304438;margin-top:35px;padding-top:15px;font-size:14px;color:#94af9f}@media(max-width:600px){main{padding-top:30px}h1{font-size:27px}.watermark span{font-size:26px;letter-spacing:4px}td,th{padding:8px;font-size:14px}}@media print{:root{color-scheme:light}body{background:white;color:#172d20;font-size:11pt}main{width:100%;padding:0}h2,h3,th,li strong{color:#172d20}p,li,td,.meta,footer{color:#354e3d}a{color:#245d41}code,kbd{color:#172d20;background:#eef4ee}.note{background:#f3f8f3}h2,h3{break-after:avoid}table,.note{break-inside:avoid}.watermark span{color:rgb(0 0 0 / 3%)}footer{margin-top:20px}}
+</style></head><body><div class="watermark" aria-hidden="true"><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span><span>南灼</span></div><main>
+<header><div class="author">南灼</div><h1>文字蜘蛛 · 使用说明书</h1><p>在自己选定的网页文字上，体验抓取、翻转、反色、扭转、拉伸与回弹。</p><p class="meta">版本 v1.0.0 · 适用浏览器：电脑端 Chrome / Microsoft Edge<br>本文可保存到本地，双击 HTML 文件即可离线阅读；也可通过浏览器打印功能保存为 PDF。</p></header>
+<h2>一、第一次安装</h2><ol>
+<li><strong>下载并完整解压安装包。</strong>保留解压后的 <code>web-crawler-extension</code> 文件夹。里面应能看到 <code>manifest.json</code>。</li>
+<li><strong>打开浏览器扩展管理页。</strong>Chrome 地址栏输入 <code>chrome://extensions</code>；Edge 输入 <code>edge://extensions</code>。打开“开发者模式”。</li>
+<li><strong>加载解压后的文件夹。</strong>点击“加载已解压的扩展程序”，选择包含 <code>manifest.json</code> 的 <code>web-crawler-extension</code> 文件夹。请选择文件夹，不要选择 ZIP 或它的上层目录。</li>
+<li><strong>固定到工具栏。</strong>在右上角“扩展”菜单中找到“文字蜘蛛”，将它固定到工具栏，方便以后开启。</li></ol>
+<p class="note">解压目录需要保留。移动目录后，需要从新位置重新加载扩展。本版提供可直接加载的扩展文件，尚未发布到扩展商店。</p>
+<p>浏览器官方说明：<a href="https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked" target="_blank" rel="noopener noreferrer">Chrome 安装指南</a> · <a href="https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading" target="_blank" rel="noopener noreferrer">Edge 安装指南</a>。</p>
+<h2>二、在自己的网页上使用</h2><p>打开目标网页，点击工具栏上的蜘蛛图标，再选择一种开启方式：</p><ul>
+<li><strong>在当前网页开启：</strong>作用于当前主页面正文中的普通文字、标题、链接和代码。</li>
+<li><strong>点击选块：</strong>移动鼠标查看高亮范围，点击想要互动的段落、代码块或内容区。</li>
+<li><strong>拖拽框选：</strong>按住鼠标画出一个至少 100 × 100 像素的矩形，松开即可启动。只作用于矩形内的完整文字片段。</li></ul>
+<p>选择过程中按 <kbd>Esc</kbd> 取消。框选范围绑定网页坐标，滚动时跟随内容移动；网页布局大幅变化后，建议重新框选。</p>
+<h2>三、调整效果与控制</h2><p>弹窗中可选择混合效果、抓取抬起、翻转反向、颜色反转、扭转摆动或拉伸挤压，并调整速度、互动力度与蜘蛛大小。脚尖接触文字以及腿部扫过文字都会触发互动。</p>
+<p>网页右下角的控制条可以暂停、切换自动游走 / 跟随指针、选择接触效果，以及关闭并恢复网页。收起控制条后，可在扩展弹窗里点击“显示控制条”重新显示。</p>
+<table><thead><tr><th>操作</th><th>快捷键</th></tr></thead><tbody><tr><td>暂停 / 继续</td><td><kbd>Alt + Shift + S</kbd></td></tr><tr><td>关闭并恢复</td><td><kbd>Alt + Shift + X</kbd></td></tr><tr><td>取消选择</td><td><kbd>Esc</kbd></td></tr></tbody></table>
+<p>设置保存在本机浏览器中。每个标签页分别运行；切换到新标签页不会自动开启。刷新或导航后，需要手动再次开启。</p>
+<h2>四、使用本地 HTML 文件</h2><p>在扩展管理页进入“文字蜘蛛”的“详细信息”，开启<strong>“允许访问文件网址”</strong>。再用同一个浏览器打开本地 HTML 文件，点击蜘蛛图标启动。</p>
+<h2>五、支持范围与恢复</h2><p>本版支持普通网页主页面中的文字。浏览器设置页、扩展商店、内置 PDF 阅读器、跨域 iframe、图片 / Canvas 内的文字和 Shadow DOM 内容不参与文字互动。</p>
+<p>输入框、表单控件和可编辑区域会跳过。网页编辑器若把内容放在可编辑区域，可选择阅读视图或预览区。</p>
+<p>扩展运行时会临时给文字加入包装与动画样式；关闭时撤销，保留原字符与链接。部分依赖精确文字节点结构的动态网页可能需要刷新恢复，建议优先选择正文或阅读区域。</p>
+<h2>六、常见问题</h2><h3>加载时提示找不到清单文件</h3><p>确认选择的是直接包含 <code>manifest.json</code> 的 <code>web-crawler-extension</code> 文件夹，而不是 ZIP 文件或解压后的上层目录。</p><h3>开启后没有效果</h3><p>确认当前打开的是普通网页，页面里有可见文字，选择范围足够大。若打开的是本地 HTML，请先开启“允许访问文件网址”。刷新后需要再次开启扩展。</p><h3>说明书下载后怎么打开</h3><p>双击下载的 HTML 文件，即可用浏览器离线阅读。想要纸质或 PDF 版本时，可使用浏览器“打印”功能。</p>
+<h2>七、隐私</h2><p>扩展只使用 <code>activeTab</code>、<code>scripting</code> 和 <code>storage</code> 权限。点击扩展后才访问你选定的网页；动画、图标和互动都在本机运行，不向服务器发送网页文字或截图。</p>
+<footer>作者：南灼 · 文字蜘蛛浏览器扩展 v1.0.0<br>本说明书与下载页均带有浅色“南灼”水印。</footer>
+</main></body></html>

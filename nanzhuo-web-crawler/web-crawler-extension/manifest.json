@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "文字蜘蛛 · Web Crawlers",
+  "version": "1.0.0",
+  "description": "在你选定的网页或区域上，让蜘蛛抓取、翻转、拉伸真实文字与代码。",
+  "minimum_chrome_version": "110",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {"service_worker": "background.js"},
+  "action": {
+    "default_title": "文字蜘蛛：选择网页与爬行区域",
+    "default_popup": "popup.html",
+    "default_icon": {"16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png"}
+  },
+  "icons": {"16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png"}
+}

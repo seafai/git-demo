@@ -1,0 +1,13 @@
+[data-wc-piece] {
+  display: inline-block !important;
+  position: relative !important;
+  vertical-align: baseline !important;
+  white-space: pre !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
